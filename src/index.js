@@ -18,6 +18,7 @@ class Home extends React.Component {
             <p>server side rendering</p>
             <button onClick={this.handleClick}>click</button>
           </div>
+          <script src="/bundle.js" />
         </body>
       </html>
     );
