@@ -9,6 +9,7 @@ function Layout({ route }) {
         <link rel="stylesheet" href="/layout.css" />
       </head>
       <body>
+        <h1>Universal app</h1>
         {renderRoutes(route.routes)}
         <script src="/bundle.js" />
       </body>

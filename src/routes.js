@@ -1,6 +1,7 @@
 const Layout = require('./layout');
 const Home = require('./');
 const About = require('./about');
+const Sub = require('./sub');
 
 const routes = [
   {
@@ -13,8 +14,14 @@ const routes = [
       },
       {
         path: '/about',
-        component: About
-      }
+        component: About,
+        routes: [
+          {
+            path: '/about/sub',
+            component: Sub,
+          }
+        ]
+      },
     ]
   }
 ];
