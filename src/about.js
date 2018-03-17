@@ -1,8 +1,8 @@
-const React = require('react');
-const { Link } = require('react-router-dom');
-const { renderRoutes } = require('react-router-config');
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
 
-module.exports = function About({ route, children }) {
+export default function About({ route, children }) {
   return (
     <div>
       <h2>About</h2>

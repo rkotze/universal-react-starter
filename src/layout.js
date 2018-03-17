@@ -1,5 +1,5 @@
-const React = require('react');
-const { renderRoutes } = require('react-router-config');
+import React from 'react';
+import { renderRoutes } from 'react-router-config';
 
 function Layout({ route }) {
   return (
@@ -17,4 +17,4 @@ function Layout({ route }) {
   )
 }
 
-module.exports = Layout;
+export default Layout;

@@ -1,5 +1,5 @@
-const React = require('react');
-const { Link } = require('react-router-dom');
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Sub() {
   return (
@@ -9,4 +9,4 @@ function Sub() {
     </div>
   );
 }
-module.exports = Sub;
+export default Sub;

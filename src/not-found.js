@@ -1,5 +1,5 @@
-const React = require('react');
-const { Route } = require('react-router-dom');
+import React from 'react';
+import { Route } from 'react-router-dom';
 
 const NotFound = () => {
   return (
@@ -16,4 +16,4 @@ const NotFound = () => {
   );
 };
 
-module.exports = NotFound;
+export default NotFound;

@@ -1,8 +1,8 @@
-const Layout = require('./layout');
-const Home = require('./');
-const About = require('./about');
-const Sub = require('./sub');
-const NotFound = require('./not-found');
+import Layout from './layout';
+import Home from './';
+import About from './about';
+import Sub from './sub';
+import NotFound from './not-found';
 
 const routes = [
   {
@@ -31,4 +31,4 @@ const routes = [
   }
 ];
 
-module.exports = routes;
+export default routes;
