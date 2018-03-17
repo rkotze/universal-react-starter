@@ -2,6 +2,7 @@ const Layout = require('./layout');
 const Home = require('./');
 const About = require('./about');
 const Sub = require('./sub');
+const NotFound = require('./not-found');
 
 const routes = [
   {
@@ -22,6 +23,10 @@ const routes = [
           }
         ]
       },
+      {
+        path: '*',
+        component: NotFound
+      }
     ]
   }
 ];

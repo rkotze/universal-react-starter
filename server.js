@@ -23,6 +23,10 @@ app.get('*', (req, res) => {
     },
       renderRoutes(routes))
   );
+
+  if (context.status === 404)
+    res.status(404);
+
   res.send(html);
 });
 
