@@ -5,15 +5,23 @@ require('babel-register')({
 const express = require('express');
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
-const Home = require('./src');
+const StaticRouter = require('react-router-dom/StaticRouter').default;
+const { renderRoutes } = require('react-router-config');
+
+const routes = require('./src/routes');
 
 const app = express();
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
+  let context = {};
   const html = ReactDOMServer.renderToString(
-    React.createElement(Home)
+    React.createElement(StaticRouter, {
+      location: req.url,
+      context: context
+    },
+      renderRoutes(routes))
   );
   res.send(html);
 });

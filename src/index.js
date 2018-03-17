@@ -1,4 +1,5 @@
 const React = require('react');
+const { Link } = require('react-router-dom');
 
 class Home extends React.Component {
   handleClick() {
@@ -7,20 +8,11 @@ class Home extends React.Component {
 
   render() {
     return (
-      <html>
-        <head>
-          <title>Universal rendering with react</title>
-          <link rel="stylesheet" href="/layout.css" />
-        </head>
-        <body>
-          <div>
-            <h1>Hello world.</h1>
-            <p>server side rendering</p>
-            <button onClick={this.handleClick}>click</button>
-          </div>
-          <script src="/bundle.js" />
-        </body>
-      </html>
+      <div>
+        <h1>Hello world.</h1>
+        <p>Server side rendering <Link to="/about">About</Link> </p>
+        <button onClick={this.handleClick}>click</button>
+      </div>
     );
   }
 }
