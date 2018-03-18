@@ -1,8 +1,8 @@
 {
   "name": "universal-react",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Minimum starting point for creating a universal ReactJS app",
+  "main": "entry/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently -k \"webpack\" \"nodemon entry/server.js\""
