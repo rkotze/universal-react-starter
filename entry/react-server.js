@@ -4,7 +4,7 @@ import StaticRouter from 'react-router-dom/StaticRouter';
 import { renderRoutes } from 'react-router-config';
 import Helmet from 'react-helmet';
 
-import routes from './src/routes';
+import routes from '../src/routes';
 
 const start = (req, res) => {
   let context = {};
