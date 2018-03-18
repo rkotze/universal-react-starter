@@ -14,5 +14,5 @@ const AppRouter = () => {
 }
 
 ReactDOM.render(
-  <AppRouter />, document
+  <AppRouter />, document.body
 );

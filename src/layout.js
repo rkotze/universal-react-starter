@@ -1,19 +1,15 @@
 import React from 'react';
 import { renderRoutes } from 'react-router-config';
+import Helmet from 'react-helmet'
 
 function Layout({ route }) {
-  return (
-    <html>
-      <head>
-        <title>Universal rendering with react</title>
-        <link rel="stylesheet" href="/layout.css" />
-      </head>
-      <body>
-        <h1>Universal app</h1>
-        {renderRoutes(route.routes)}
-        <script src="/bundle.js" />
-      </body>
-    </html>
+  return (<div>
+    <Helmet
+      titleTemplate={`%s | Ultimate universal app`}
+      defaultTitle="Universal" />
+    <h1>Universal app</h1>
+    {renderRoutes(route.routes)}
+  </div>
   )
 }
 
