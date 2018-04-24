@@ -1,5 +1,5 @@
 require('babel-register')({
-  presets: ['react', 'env']
+  presets: ['react', 'env', 'stage-1']
 });
 const express = require('express');
 
