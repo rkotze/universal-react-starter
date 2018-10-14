@@ -25,8 +25,8 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
-    "concurrently": "^3.5.1",
-    "nodemon": "^1.17.2",
+    "concurrently": "^3.6.1",
+    "nodemon": "^1.18.4",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   }
