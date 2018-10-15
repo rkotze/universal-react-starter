@@ -4,8 +4,14 @@ Simple get started project for server side rendering with React and React Router
 
 ## Get started
 
+### Local development
+
 1. `npm i`
-1. `npm start`
+1. `npm run dev` Run for local development, file watching and reloading. (No hot reload, at the mo)
+
+`npm start` Main script to run app on server. Should work locally.
+
+`npm run build` Build production bundle.
 
 ### Objective
 
