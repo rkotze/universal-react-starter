@@ -5,7 +5,9 @@
   "main": "entry/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently -k \"webpack\" \"nodemon entry/server.js\""
+    "start": "node entry/server.js",
+    "dev": "concurrently -k \"webpack\" \"nodemon entry/server.js\"",
+    "build": "webpack --config webpack-production.config.js -p"
   },
   "keywords": [],
   "author": "",
