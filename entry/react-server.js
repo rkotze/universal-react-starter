@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
+import { StaticRouter } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 import Helmet from "react-helmet";
-const StaticRouter = require("react-router-dom").StaticRouter;
 
 import routes from "../src/routes";
 
@@ -24,7 +24,7 @@ const start = (req, res) => {
       <link rel="stylesheet" href="/layout.css">
     </head>
     <body>
-      ${body}
+      <div id="app">${body}</div>
       <script src="/bundle.js"></script>
     </body>
   </html>`;
