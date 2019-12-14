@@ -1,4 +1,5 @@
 const path = require("path");
+const webpackOptions = require("./webpack-options");
 
 module.exports = {
   mode: "development",
@@ -14,9 +15,7 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: {
-            presets: ["react", "env", "stage-1"]
-          }
+          options: webpackOptions
         }
       }
     ]
