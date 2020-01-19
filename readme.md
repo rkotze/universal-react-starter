@@ -1,6 +1,6 @@
 # Universal React starter
 
-Simple get started project for server side rendering with React and React Router 4.
+Simple get started project for server side rendering with React and React Router.
 
 ## Get started
 
